@@ -140,4 +140,67 @@
 
 }
 
+/* 美羽 */
+.site-header-conts{
+    padding: 10px 0 0;
+    /* margin-right: 0; */
+    /* margin-left: auto; */
+}
+.topimage{ 
+    display:inline-block;
+    width: 158px;
+    height: 40px;
+    margin-left: 0;
+    margin-right: auto;
+    border: 0;
+    box-sizing: border-box;
+    /* margin-bottom: 10px; */
+    margin-top: 10px;
+    vertical-align: text-bottom;
+}
 
+.topmenu{
+    font-weight: bold;
+    display: inline-block;
+}
+
+.topmenu li {
+    display: inline-block;
+    padding: 0 20px;
+    
+}
+.topmenu li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.snsimage{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 0;
+    border: 0;
+    vertical-align: text-bottom;
+    margin-right: 0;
+    box-sizing: border-box;
+}
+.snscontainer{
+    /* display: inline-block; */
+    /* margin-left: auto; */
+    /* margin-right: 0; */
+    position: absolute;
+    top: 50px;
+    right: 0;
+    display: table-cell;
+    vertical-align: top;
+    text-align: right;
+}
+.site-header-in{
+    margin: auto;
+    width: 100%;
+    border-bottom: 35px solid #BC1A29;
+    height: 115px;
+    box-sizing: border-box;
+    background-color: #fff;
+    
+}
