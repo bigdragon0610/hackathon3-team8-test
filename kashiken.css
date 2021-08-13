@@ -1,0 +1,143 @@
+.slide {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide img {
+    width: 100%;
+    margin-left: 0;
+    margin-right: auto;
+    top: 0;
+    left: 50px;
+    position: absolute;
+}
+
+.top-topics {
+    background-color: #F6EEE6;
+    /* width: 80%; */
+    /* text-align: center; */
+    padding-top: 70px;
+    padding-bottom: 50px;
+
+}
+
+
+.top-topics__container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+}
+
+.title-topics {
+    margin: 0 auto;
+    line-height: 1.2;
+    font-size: 44px;
+    text-align: center;
+    font-weight: normal;
+    font-family: "Roboto Slab" , Garamond , "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+}
+
+.kana-topics {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+
+}
+
+.top-topics__inner {
+    margin-top: 45px;
+    padding: 0;
+    text-align: center;
+    /* padding-left: 35px; */
+}
+
+.top-topics__inner a {
+    max-width: 550px;
+    display: inline-block;
+}
+
+.top-topcis__block {
+    margin-bottom: 40px;    
+    width: 50%;
+}
+
+.top-topcis__block div {
+    display: inline-block;
+}
+
+.top-topcis__img {
+    width: 49%;
+}
+
+.top-topcis__img img {
+    max-width: 230px;
+   
+}
+
+.top-topcis__txt-area {
+    width: 45%;
+    vertical-align: top;
+    /* margin-left: 20px; */
+    color: black;
+    text-align: left;
+}
+
+.top-topcis__date {
+    margin-top: 0;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid rgba(56, 43, 32, 0.5);
+    font-size: 18px;
+    font-family: 'DIN Alternate',sans-serif;
+}
+
+.top-topcis__txt {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.8em;
+}
+
+.banner-link {
+    position: relative;
+    font-size: 27px;
+    color: #C32033;
+    font-weight: bold;
+    border: 3px solid #C32033;
+    border-radius: 8px;
+    max-width: 900px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 150px;
+    text-decoration: none;
+}
+
+.banner-link:after {
+    position: absolute;
+    top: 50%;
+    right: 34px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #C32033;
+    border-right: 3px solid #C32033;
+    content: "";
+    transform: rotate(45deg)
+
+
+}
+
+
