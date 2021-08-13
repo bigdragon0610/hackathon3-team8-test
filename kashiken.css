@@ -1,5 +1,5 @@
 .slide {
-    width: 100%;
+    width: 1200;
     height: 500px;
     margin: 0;
     padding: 0;
@@ -12,11 +12,16 @@
 
 .slide img {
     width: 100%;
+    height: 100%;
     margin-left: 0;
     margin-right: auto;
     top: 0;
     left: 50px;
     position: absolute;
+}
+
+.all-container {
+    line-height: 1.8em;
 }
 
 .top-topics {
@@ -28,10 +33,9 @@
 
 }
 
-
 .top-topics__container {
-    margin: 0 auto;
-    padding: 0 20px;
+    margin: 0;
+    padding: 0;
     max-width: 1200px;
 }
 
@@ -52,6 +56,7 @@
 }
 
 .top-topics__inner {
+    width: 100%;
     margin-top: 45px;
     padding: 0;
     text-align: center;
@@ -66,6 +71,7 @@
 .top-topcis__block {
     margin-bottom: 40px;    
     width: 50%;
+    display: flex;
 }
 
 .top-topcis__block div {
@@ -102,7 +108,6 @@
     margin-top: 0;
     margin-bottom: 0;
     font-size: 16px;
-    line-height: 1.8em;
 }
 
 .banner-link {
@@ -136,9 +141,26 @@
     border-right: 3px solid #C32033;
     content: "";
     transform: rotate(45deg)
-
-
 }
+
+.top-link {
+    display: -webkit-flex;
+    display: flex;
+    margin: 40px auto 145px;
+    padding: 0 20px;
+    max-width: 940px;
+}
+
+.top-link a {
+    display: inline-block;
+    margin: 0 10px;
+    width: 50%;
+    height: 100px;
+    -webkit-box-align: center;
+    align-items: center;
+    vertical-align: center;
+}
+
 
 /* 美羽 */
 .site-header-conts{
@@ -203,4 +225,97 @@
     box-sizing: border-box;
     background-color: #fff;
     
+}
+.wrap-footer{
+    width: 100%;
+    background-color: #EAE9E8;
+}
+.box{
+    /* 箱を作って横並べ */
+    display: inline-block;
+    width: 300px;
+}
+.notdot{
+    /* ・を非表示 */
+    list-style-type: none;
+}
+.listlink-footer{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+.sublink-footer{
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+}
+.logo-footer{
+    text-align: center;
+}
+.policy-footer{
+    text-align: center;
+    border-bottom: 1px solid rgba(56, 43, 32, 0.5);
+
+}
+.subpolicy-footer{
+    display: inline-block;
+    list-style-type: none;
+    color: black;
+}
+.copy-footer{
+    text-align: center;
+    font-size: 12px;
+}
+.top-link:first-of-type {
+    margin-right: 20px;
+}
+
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+
+
+.top-link__block--red {
+    background-color: #C32033;
+}
+
+.top-link__inner {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    vertical-align: center;
+}
+
+.top-link__img {
+    width: 34%;
+}
+
+.imgdefault {
+    width: 100px;
+    height: 50px;
+}
+
+.top-link__txt-s {
+    margin: 0;
+    padding-left: 30px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none !important;
+
+}
+
+.top-link__block--brown {
+    background-color: #392B1F;
+}
+
+.top-link__txt {
+    margin: 0;
+    padding-left: 75px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none !important;
 }
