@@ -161,6 +161,47 @@
     vertical-align: center;
 }
 
+.wrap-footer{
+    width: 100%;
+    background-color: #EAE9E8;
+}
+.box{
+    /* 箱を作って横並べ */
+    display: inline-block;
+    width: 300px;
+}
+.notdot{
+    /* ・を非表示 */
+    list-style-type: none;
+}
+.listlink-footer{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+.sublink-footer{
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+}
+.logo-footer{
+    text-align: center;
+}
+.policy-footer{
+    text-align: center;
+    border-bottom: 1px solid rgba(56, 43, 32, 0.5);
+
+}
+.subpolicy-footer{
+    display: inline-block;
+    list-style-type: none;
+    color: black;
+}
+.copy-footer{
+    text-align: center;
+    font-size: 12px;
+}
 .top-link:first-of-type {
     margin-right: 20px;
 }
