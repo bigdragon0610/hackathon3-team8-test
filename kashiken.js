@@ -10,3 +10,26 @@ $(function () {
         $(setImg + ' :first-child').animate({ opacity: '0' }, fadeSpeed).next('img').animate({ opacity: '1' }, fadeSpeed).end().appendTo(setImg);
     }, switchDelay);
 });
+document.getElementById('shop').addEventListener('mouseover', () => {//マウスかざしたら
+   document.getElementById('submenu1').style.display='block';
+})
+document.getElementById('shop').addEventListener('mouseout', () => {//マウス離したら
+    document.getElementById('submenu1').style.display='none';
+})
+
+document.getElementById('gongcha').addEventListener('mouseover', () => {//マウスかざしたら
+    document.getElementById('submenu2').style.display='block';
+ })
+ document.getElementById('gongcha').addEventListener('mouseout', () => {//マウス離したら
+     document.getElementById('submenu2').style.display='none';
+ })
+
+ document.getElementById('company').addEventListener('mouseover', () => {//マウスかざしたら
+    document.getElementById('submenu3').style.display='block';
+ })
+ document.getElementById('company').addEventListener('mouseout', () => {//マウス離したら
+     document.getElementById('submenu3').style.display='none';
+ })
+ 
+ 
+
