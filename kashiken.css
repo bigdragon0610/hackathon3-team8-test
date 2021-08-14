@@ -94,10 +94,8 @@
     height: 520px;
     margin: 0;
     padding: 0;
-    text-align: center;
     overflow: hidden;
     position: relative;
-    align-items: center;
     justify-content: center;
 }
 
@@ -112,13 +110,10 @@
 
 }
 
-.top-topics {
+.top-topics-section {
     background-color: #F6EEE6;
-    /* width: 80%; */
-    /* text-align: center; */
     padding-top: 70px;
     padding-bottom: 50px;
-
 }
 
 
@@ -128,7 +123,7 @@
     max-width: 1200px;
 }
 
-.title-topics {
+.title {
     margin: 0 auto;
     line-height: 1.2;
     font-size: 44px;
@@ -137,7 +132,7 @@
     font-family: "Roboto Slab" , Garamond , "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
 }
 
-.kana-topics {
+.kana {
     font-size: 14px;
     text-align: center;
     display: block;
@@ -154,6 +149,7 @@
 .top-topics__inner a {
     max-width: 550px;
     display: inline-block;
+    margin: 0 10px;
 }
 
 .top-topcis__block {
@@ -208,13 +204,10 @@
     max-width: 900px;
     height: 120px;
     display: flex;
-    align-items: center;
-    margin: 0 auto;
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    margin-top: 150px;
+    margin: 150px auto 0;
     text-decoration: none;
 }
 
@@ -242,9 +235,9 @@
 .top-link a {
     display: inline-block;
     margin: 0 10px;
+    /* padding: 10px 0; */
     width: 50%;
     height: 100px;
-    -webkit-box-align: center;
     align-items: center;
     vertical-align: center;
 }
