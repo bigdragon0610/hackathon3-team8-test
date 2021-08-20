@@ -392,14 +392,27 @@ a:-webkit-any-link {
 /* みれい */
 .wrap-footer{
     width: 105%;
+    margin: 0 auto;
     background-color: #EAE9E8;
 }
 .list-footer{
-    text-align: center;
+    /* text-align: center; */
     margin: 16px auto;
-    padding-left: 75px;
     padding-top: 100px;
 }
+.footer-list-1{
+    display: flex;
+    justify-content: center;
+}
+.footer-list{
+    display: flex;
+}
+/* .footer-list--1{
+    display: flex;
+} */
+/* .footer-list--3{
+    display: flex;
+} */
 .section-footer{
     text-align: left;
     /* 箱を作って横並べ */
@@ -424,7 +437,7 @@ a:-webkit-any-link {
     display: inline-block;
 }
 .hurantyaizu{
-    width: 150px;
+    width: 140px;
     text-align: left;
 }
 .logo-footer{
@@ -432,12 +445,11 @@ a:-webkit-any-link {
     padding-top: 10px;
 }
 .policy-footer{
-    text-align: center;
+    /* text-align: center; */
     padding-top: 40px;
     padding-left: 50px;
-    border-bottom: 1px solid black;
-    /* border-bottom-width: 80%; */
-    margin: 0 320px;
+    display: flex;
+    justify-content: center;
 }
 .subpolicy-footer{
     display: inline-block;
@@ -448,9 +460,89 @@ a:-webkit-any-link {
 .copy-footer{
     padding-top: 10px;
     padding-bottom: 50px;
+    border-top: 1px solid black;
+    /* width: 1000px; */
+    margin: 0 20px;
 }
 .copy-footer-text{
-    text-align: center;
     font-size: 12px;
+    text-align: center;
 }
+@media screen and (max-width: 900px){
+    /* 900px以下に適用されるCSS */
+    /* .footer-list{
+        justify-content: center;
+        margin: 20px 0;
+    } */
+    /* .footer-list-1{
+        justify-content: center;
+        display: flex;
+    } */
+    .footer-list--3{
+        justify-content: center;
+        display: flex;
+    }
+    .section-footer{
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 736px) {
+    /* 736px以下に適用されるCSS */
+    .list-footer{
+        display: flex;
+        margin-bottom: 12.5vw;
+    }
+    .listlink-footer{
+        font-size: 4.0625vw;
+    }
+    .sublink-footer{
+        font-size: 3.125vw;
+    }
+    .footer-list {
+        font-size: 30px;
+        display: block;
+    }
+    .footer-list-1{
+        margin: 0 0 0 100px;
+        width: 100%;
+    }
+    .copy-footer{
+        padding-bottom: 35vw;
+    }
+    .copy-footer-text{
+        font-size: 3.125vw;
+        max-width: 80%;
+        padding-left: 98px;
+    }
+    .footer-list--3{
+        margin-left: -20px;
+    }
+    .sp-hide {
+        display: none !important;
+    }
+}
+@media screen and (min-width: 901px){
+    /* 901px以上に適用されるCSS */
+    .list-footer{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 737px){
+    /* 737px以上に適用されるCSS */
+    .pc-hide {
+        display: none !important;
+    }
+}
+@media (min-width: 737px) and (max-width: 900px){
+    .section-footer{
+        width: 150px;
+    }
+}
+/* @media only screen and (max-width: 736px){
+    .sp-hide {
+        display: none !important;
+    }
+} */
 /* 下に余白ができてしまうのは、全体に上下0をかければよい？ */
