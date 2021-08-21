@@ -10,6 +10,7 @@ $(function () {
         $(setImg + ' :first-child').animate({ opacity: '0' }, fadeSpeed).next('img').animate({ opacity: '1' }, fadeSpeed).end().appendTo(setImg);
     }, switchDelay);
 });
+
 document.getElementById('shop').addEventListener('mouseover', () => {//マウスかざしたら
    document.getElementById('submenu1').style.display='block';
 })
@@ -31,5 +32,8 @@ document.getElementById('gongcha').addEventListener('mouseover', () => {//マウ
      document.getElementById('submenu3').style.display='none';
  })
  
- 
-
+$(function () {
+    $('.js-btn').on('click', function () { 
+      $('.topmenu , .menu-btn , .btn-line').toggleClass('open'); 
+    })
+  });
