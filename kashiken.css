@@ -1,0 +1,735 @@
+/* 美羽 */
+.site-header-conts{
+    /* width: 100%; */
+    padding: 0.5em 1em;
+    display: block; 
+    /* margin-right: 0; */
+    /* margin-left: auto; */
+}
+.topimage{ 
+    display: inline-block;
+    width: 15%;
+    height: 20%;
+    /* width: 20%; */
+    /* height: 30%;  */
+    /* margin-left: 0; */
+    /* margin-right: 17%; */
+    /* border: 0; */
+    box-sizing: border-box;
+    /* margin-bottom: 10px; */
+    margin-top: 1em;
+    vertical-align: bottom;
+    /* list-style: none;
+    margin: 0 5em 0 0 ; */
+}
+
+.topmenu{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    /* display: flex; */
+    /* justify-content: center; */
+    top: 0.7em;
+    left: 10%; 
+    /* right: 1%; */
+    position: relative;
+    /* text-align: center; */
+    
+}
+
+.header-list{
+    display: block;
+    padding: 0 1em;
+    
+    padding-right: 10px;
+    /* height: 20.67px; */
+    float: left;
+   /* max-width: 90px; */
+   /* width: calc(100% - 50px); */
+}
+/* .menu-list{
+    margin: 0 0 0 5px;
+    display: inline-block;
+} */
+
+
+.topmenu li a{
+    display: block;
+    color: black;
+    text-decoration: none; 
+    /* margin: auto; */
+    
+}
+
+.snsimage{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 0;
+    border: 0;
+    vertical-align: text-bottom;
+    box-sizing: border-box;
+    list-style: none;
+}
+    
+.snscontainer {
+    /* display: inline-block; */
+    /* margin-left: auto; */
+    /* margin-right: 0; */
+    position: absolute;
+    top: 1.5em;
+    right: 0;
+    /* display: table-cell; */
+    display: flex;
+    vertical-align: top;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.site-header-in{
+    display: block;
+    margin: auto;
+    width: 100%;
+    border-bottom: 35px solid #BC1A29;
+    height: 7em;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.sub-menu{
+    display: block;
+    /* position: absolute; */
+    /* height: 3em; */
+
+}
+.submenu{
+     /* margin: 0 13em; */
+     display: none;
+     box-sizing: border-box;
+     pointer-events: none;
+     position: absolute;
+     top: 5em;
+     left: 17em;
+
+}
+.submenu li{
+    display: inline-block;
+    padding: 0 1em; 
+   
+}
+.submenu li a{
+    color: white;
+    font-size: 14px;
+   
+}
+.menu-btn{
+    display: none;
+}
+
+@media screen and (max-width:736px){
+    * {
+        float: none;
+        position: static;
+       
+    }
+    /* .body{
+         background-color: white;
+    } */
+     
+    .topimage {
+        /* max-width: 100%; */
+        /* height: auto; */
+        /* max-height: 50%; */
+        width: 158px ;
+        max-height: 37px;
+        height: 100%;
+        position: relative;
+        /* position: fixed; */
+        z-index: 100000;
+        left: 60px;
+        display: inline-block;
+    }
+    .snsimage{
+        /* position: fixed; */
+        top: -0.5em;
+        position: relative;
+        /* position: fixed; */
+        z-index: 100000;
+    }
+    .site-header-conts{
+        /* width: 100%; */
+        padding: 0;
+        margin: auto;
+        /* background-color: white; */
+        
+    }
+    .site-header-in{
+        position: fixed;
+        z-index: 100000;
+        border-bottom: none;
+        /* margin: 0; */
+        height: 4em;
+    }
+    .topmenu{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: -1000%;
+        left: 0;
+        transition: .3s;
+    }
+   
+    .header-list{ 
+        /* display: flex; */
+        margin: 15px;
+        justify-content: center;
+        align-items: center;
+
+        display: block;
+        top: 50px;
+        position: relative;
+        
+    }
+    .topmenu.open{
+        position: absolute;
+        top: 0;
+    }
+    .btn-line{
+        width: 100%;
+        height: 4px;
+      /* バーガー線の色 */
+        background-color: white;
+      /* バーガー線の位置基準として設定 */
+        position: relative;
+        
+    }
+
+    .menu-btn {
+        position: fixed;
+        top: 0;
+        /* right: 10px; */
+        left: 0;
+        height: 48px;
+        width: 48px;
+         /* バーガーの線をボタン範囲の中心に配置 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100000;
+        background-color:white;
+        border: none;
+    }
+
+
+
+    .menu-btn span,
+    .menu-btn span:before,
+    .menu-btn span:after {
+        content: '';
+        display: flex;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background-color: #BC1A29;
+        position: absolute;
+    }
+    .menu-btn span:before {
+        bottom: 8px;
+    }
+    .menu-btn span:after {
+        top: 8px;
+    }
+
+}
+
+
+/* ///////////////////////かしけん ////////////////////// */
+ 
+.slide {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    margin: 0 0.1em;
+    top: 0;
+    position: absolute;
+}
+
+.all-container {
+    line-height: 1.8em;
+}
+
+.top-topics-section {
+    background-color: #F6EEE6;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.top-topics__container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.title {
+    margin: 0;
+    line-height: 1.2;
+    font-size: 44px;
+    text-align: center;
+    font-weight: normal;
+    font-family: "Roboto Slab" , Garamond , "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+}
+
+.kana {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+
+}
+
+.top-topics__inner {
+    width: 100%;
+    margin-top: 45px;
+    padding: 0;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.top-topics__inner a {
+    max-width: 80%;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.top-topcis__block {
+    margin-bottom: 40px;    
+    width: 47%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-topcis__block div {
+    display: inline-block;
+}
+
+.top-topcis__img {
+    width: 45%;
+}
+
+.top-topcis__img img {
+    width: 100%;
+}
+
+.top-topcis__txt-area {
+    width: 45%;
+    vertical-align: top;
+    margin-left: 20px;
+    color: black;
+    text-align: left;
+}
+
+.top-topcis__date {
+    margin-top: 0;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid rgba(56, 43, 32, 0.5);
+    font-family: 'DIN Alternate',sans-serif;
+}
+
+.top-topcis__txt {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 736px) {
+
+    .top-topics__inner a {
+        width: 100%;
+    }
+    .top-topcis__block {
+        width: 100%;
+        display: block;
+    }
+    .top-topcis__block div {
+        width: 100%;
+        display: block;
+    }
+
+    .top-topcis__txt-area {
+        margin-top: 20px;
+        font-size: 25px;
+    }
+
+    .banner-link {
+        margin: 0 auto;
+        max-width: 80%;
+        line-height: 1.8;
+        text-align: left;
+    }
+
+    .top-topcis__block {
+    width: 100%;
+    display: block;
+    }
+    
+    .top-link{
+        width: 100%;
+        display: block;
+        margin: 12.5vw 6.25vw 21.875vw;
+        
+    }
+}
+
+.banner-link {
+    position: relative;
+    font-size: 27px;
+    color: #C32033;
+    font-weight: bold;
+    border: 3px solid #C32033;
+    border-radius: 8px;
+    max-width: 75%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px auto 0;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.banner-link:after {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #C32033;
+    border-right: 3px solid #C32033;
+    content: "";
+    transform: rotate(45deg)
+}
+
+.top-link {
+    /* display: -webkit-flex; */
+    display: flex;
+    margin: 40px auto 145px;
+    padding: 0 20px;
+    max-width: 940px;
+}
+
+.top-link a {   
+    margin: 0 10px;
+    /* padding: 3.125vw; */
+    width: 50%;
+    height: 100px;
+    align-items: center;
+    vertical-align: center;
+}
+
+.top-link:first-of-type {
+    margin-right: 20px;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+.top-link__block--red {
+    background-color: #C32033;
+}
+
+.top-link__block--brown {
+    background-color: #392B1F;
+}
+
+.top-link__inner {
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+    vertical-align: center;
+    margin: auto;
+}
+
+.top-link__img {
+    margin-top: 0.5em;
+    margin-left: 1.0em;
+    max-width: 34%;
+}
+
+.imgdefault {
+    max-width: 100%;
+    /* max-height: 100%; */
+}
+
+.top-link__txt-s {
+    margin: 0;
+    padding-left: 30px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none !important;
+
+}
+
+.top-link__txt {
+    margin: 0;
+    padding-left: 75px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none !important;
+}
+
+/* news欄 */
+.top-news-section {
+    display: block;
+}
+
+.top-news__container {
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 940px;
+}
+
+.top-news__divdiv {
+   padding-bottom: 100px;
+   max-width: 480px;
+   width: 48%;
+}
+
+.top-news__inner {
+    margin-top: 50px;
+}
+
+.pr-list {
+    margin-bottom: 75px;
+}
+
+.pr-list li {
+    position: relative;
+    list-style-type: none;
+    padding-top: 15px;
+    font-size: 16px;   
+}
+
+/* 日付 */
+.top-news__inner strong {
+    padding-left: 35px;
+    width: 155px;
+    font-family: 'DIN Alternate',sans-serif;
+
+}
+
+.pr-list a {
+    padding: 0 0 15px 35px;
+    max-width: 300px;
+    border-bottom: 1px solid #cccccc;
+    text-decoration: none;
+    color: black;
+    display: flex;
+
+}
+
+.pr-list li:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #C32033;
+    border-right: 1px solid #C32033;
+    content: "";
+    transform: rotate(45deg)
+}
+
+.pr-list li:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 1px;
+    border-bottom: 1px solid #c32032;
+    content: "";
+}
+
+.top-news__link {
+    display: block;
+    color: #C32033;
+    border: 1px solid #C32033;
+    margin: 0 auto;
+    width: 190px !important;
+    height: 50px !important;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'DIN Alternate',sans-serif;
+    line-height: 50px;
+}
+
+/* みれい */
+.wrap-footer{
+    width: 105%;
+    margin: 0 auto;
+    background-color: #EAE9E8;
+}
+.list-footer{
+    /* text-align: center; */
+    margin: 16px auto;
+    padding-top: 100px;
+}
+.footer-list-1{
+    display: flex;
+    justify-content: center;
+}
+.footer-list{
+    display: flex;
+}
+/* .footer-list--1{
+    display: flex;
+} */
+/* .footer-list--3{
+    display: flex;
+} */
+.section-footer{
+    text-align: left;
+    /* 箱を作って横並べ */
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 60px;
+}
+.section-footer li{
+    /* ・を非表示 */
+    list-style-type: none;
+}
+.listlink-footer{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+.sublink-footer{
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    display: inline-block;
+}
+.hurantyaizu{
+    width: 140px;
+    text-align: left;
+}
+.logo-footer{
+    text-align: center;
+    padding-top: 10px;
+}
+.policy-footer{
+    /* text-align: center; */
+    padding-top: 40px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+}
+.subpolicy-footer{
+    display: inline-block;
+    list-style-type: none;
+    color: black;
+    padding-bottom: 10px;
+}
+.copy-footer{
+    padding-top: 10px;
+    padding-bottom: 50px;
+    border-top: 1px solid black;
+    /* width: 1000px; */
+    margin: 0 20px;
+}
+.copy-footer-text{
+    font-size: 12px;
+    text-align: center;
+}
+@media screen and (max-width: 900px){
+    /* 900px以下に適用されるCSS */
+    /* .footer-list{
+        justify-content: center;
+        margin: 20px 0;
+    } */
+    /* .footer-list-1{
+        justify-content: center;
+        display: flex;
+    } */
+    .footer-list--3{
+        justify-content: center;
+        display: flex;
+    }
+    .section-footer{
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 736px) {
+    /* 736px以下に適用されるCSS */
+    .list-footer{
+        display: flex;
+        margin-bottom: 12.5vw;
+    }
+    .listlink-footer{
+        font-size: 4.0625vw;
+    }
+    .sublink-footer{
+        font-size: 3.125vw;
+    }
+    .footer-list {
+        font-size: 30px;
+        display: block;
+    }
+    .footer-list-1{
+        margin: 0 0 0 100px;
+        width: 100%;
+    }
+    .copy-footer{
+        padding-bottom: 35vw;
+    }
+    .copy-footer-text{
+        font-size: 3.125vw;
+        max-width: 80%;
+        padding-left: 98px;
+    }
+    .footer-list--3{
+        margin-left: -20px;
+    }
+    .sp-hide {
+        display: none !important;
+    }
+}
+@media screen and (min-width: 901px){
+    /* 901px以上に適用されるCSS */
+    .list-footer{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 737px){
+    /* 737px以上に適用されるCSS */
+    .pc-hide {
+        display: none !important;
+    }
+}
+@media (min-width: 737px) and (max-width: 900px){
+    .section-footer{
+        width: 150px;
+    }
+}
+/* @media only screen and (max-width: 736px){
+    .sp-hide {
+        display: none !important;
+    }
+} */
+/* 下に余白ができてしまうのは、全体に上下0をかければよい？ */
